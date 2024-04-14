@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto Integrador 1 CESMAC</title>
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,19 +14,26 @@
   </head>
   <body>
     <header>
-      <img src="./imgs/logo-cesmac.png" alt="Logo CESMAC" />
-      <h1>Projeto Integrador 1 CESMAC - ADS</h1>
+      <img class="logo" src="./imgs/logo-cesmac.png" alt="Logo CESMAC" />
+
+      <h1 class="title">Projeto Integrador 1 CESMAC - ADS</h1>
+
+      <buttom onclick="menuShow()" class="mobile-menu-icon"
+        ><img class="icon" src="./imgs/menu_black.svg"
+      /></buttom>
     </header>
-    <nav>
+
+    <div class="menu">
       <a href="#" class="active">S.O</a>
-      <a href="#link1">Link 1</a>
-      <a href="#link2">Link 2</a>
-      <a href="#link3">Link 3</a>
+      <a onclick="menuHide()" href="#link1">Link 1</a>
+      <a onclick="menuHide()" href="#link2">Link 2</a>
+      <a onclick="menuHide()" href="#link3">Link 3</a>
       <a href="#" class="active">Arq. Computadores</a>
-      <a href="#link4">Link 4</a>
-      <a href="">Link 2</a>
-      <a href="">Link 3</a>
-    </nav>
+      <a onclick="menuHide()" href="#link4">Link 4</a>
+      <a onclick="menuHide()" href="">Link 2</a>
+      <a onclick="menuHide()" href="">Link 3</a>
+    </div>
+
     <main>
       <section id="link1">
         <h1>link 1</h1>
@@ -158,5 +165,5 @@
       </section>
     </main>
   </body>
-  <script src="./index.js"></script>
+  <script src="./script.js"></script>
 </html>
