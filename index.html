@@ -13,7 +13,7 @@
     />
   </head>
   <body>
-    <header>
+    <header id="header">
       <img class="logo" src="./imgs/logo-cesmac.png" alt="Logo CESMAC" />
 
       <h1 class="title">Projeto Integrador 1 CESMAC - ADS</h1>
@@ -23,19 +23,30 @@
       /></buttom>
     </header>
 
-    <div class="menu">
+    <div id="menu" class="menu">
       <a href="#" class="active">S.O</a>
-      <a onclick="menuHide()" href="#link1">Link 1</a>
-      <a onclick="menuHide()" href="#link2">Link 2</a>
-      <a onclick="menuHide()" href="#link3">Link 3</a>
+      <a id="menu-link1" onclick="menuHide()" href="#link1">Link 1</a>
+      <a id="menu-link2" onclick="menuHide()" href="#link2">Link 2</a>
+      <a id="menu-link3" onclick="menuHide()" href="#link3">Link 3</a>
       <a href="#" class="active">Arq. Computadores</a>
-      <a onclick="menuHide()" href="#link4">Link 4</a>
-      <a onclick="menuHide()" href="">Link 2</a>
-      <a onclick="menuHide()" href="">Link 3</a>
+      <a id="menu-link4" onclick="menuHide()" href="#link4">Link 4</a>
+      <a id="menu-link5" onclick="menuHide()" href="">Link 2</a>
+      <a id="menu-link6" onclick="menuHide()" href="">Link 3</a>
     </div>
 
     <main>
-      <section id="link1">
+
+      <div class="dark-theme">
+        <input type="checkbox" class="checkbox" id="chk" onclick="lightDark()">
+
+        <label class="label" for="chk">
+          <i class="fa-solid fa-sun"></i>
+          <i class="fa-solid fa-moon"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+
+      <section class="section" id="link1">
         <h1>link 1</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat
@@ -67,7 +78,7 @@
           condimentum interdum urna sed efficitur.
         </p>
       </section>
-      <section id="link2">
+      <section  class="section" id="link2">
         <h1>link 2</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat
@@ -99,7 +110,7 @@
           condimentum interdum urna sed efficitur.
         </p>
       </section>
-      <section id="link3">
+      <section class="section" id="link3">
         <h1>link 3</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat
@@ -131,7 +142,7 @@
           condimentum interdum urna sed efficitur.
         </p>
       </section>
-      <section id="link4">
+      <section  class="section" id="link4">
         <h1>link 4</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat
@@ -164,6 +175,8 @@
         </p>
       </section>
     </main>
+
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/90d858395e.js" crossorigin="anonymous"></script>
   </body>
-  <script src="./script.js"></script>
 </html>
