@@ -35,6 +35,7 @@ function lightDark() {
   const link4 = document.getElementById('link4');
   const link5 = document.getElementById('link5');
   const link6 = document.getElementById('link6');
+  const link7 = document.getElementById('link7')
 
   const idMenu = document.getElementById('menu');
   
@@ -91,6 +92,12 @@ function lightDark() {
     link6.classList.remove("dark")
   } else {
     link6.classList.add("dark")
+  }
+
+  if (link7.classList.contains("dark")) {
+    link7.classList.remove("dark")
+  } else {
+    link7.classList.add("dark")
   }
 
   // menu
