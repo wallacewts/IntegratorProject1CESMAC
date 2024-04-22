@@ -169,6 +169,21 @@ main section p {
     margin-top: 1rem;
 }
 
+.evo {
+  display: flex;
+  align-content: center;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.linha {
+  width:800px;
+}
+
+figcaption {
+  text-align: center;
+}
+
 .mobile-menu-icon {
   display: none;
 }
