@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   color: black;
+  text-align: justify;
 }
 
 html,
@@ -138,6 +139,7 @@ header a {
   display: flex;
   flex-direction: column;
   background-color: #fff;
+  
 }
 
 .menu a {
@@ -147,6 +149,11 @@ header a {
 
 .menu a.active {
   background-color: #32b2e3;
+  color: white;
+}
+
+.credits {
+  background-color: rgb(54, 118, 237);
   color: white;
 }
 
@@ -166,7 +173,7 @@ main section {
 
 main section p {
   margin-bottom: 1rem;
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .evo {
@@ -182,6 +189,12 @@ main section p {
 
 figcaption {
   text-align: center;
+}
+
+footer {
+  background-color: #fff;
+  text-align: center;
+
 }
 
 .mobile-menu-icon {
