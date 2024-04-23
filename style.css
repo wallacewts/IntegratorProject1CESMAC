@@ -120,6 +120,7 @@ header h1 {
   grid-area: title;
   margin-left: 1rem;
   justify-content: center;
+  text-align: left;
 }
 
 header a {
@@ -222,6 +223,10 @@ footer {
 
   .mobile-menu-icon {
     display: block;
+  }
+
+  .linha {
+    max-width: 300px;
   }
 
   .mobile-menu-icon button {
